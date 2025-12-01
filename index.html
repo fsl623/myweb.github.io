@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新思路</title>
+    <style>
+        *{
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .nav-a a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav-a:hover{
+            background-color: #ff9500;
+            color:#666;
+        }
+        .nav-a a:hover{
+            color: #666;
+        }
+        .nav-b:hover{
+            background-color: #ff9500;
+            color: #fff;
+        }
+        .nav-b a:hover{
+            color:#fff;
+        }
+        .nav-b a{
+            color: #666;
+        }
+        .nav ul{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: space-around;
+            margin-left: -2.5%;
+        }
+        li{
+            display: flex;
+            padding: 0 25px;
+            height: 59px;
+            align-items: center;
+            border-radius: 25px;
+            margin-top: -15px;
+            width:19.6% ;
+            justify-content: center;
+            font-size: 30px;
+        }
+        nav{
+            width: 98%;
+            height: 60px;
+            background-color: #f8aa01f1;
+            border-radius: 25px;
+            position: fixed;
+            z-index: 1;
+        }
+        div> .title{
+            margin-left: 10%;
+            line-height: 50px;
+        }
+        #geek{
+            width: 30%;
+            position: absolute;
+            margin-left: 50%;
+            margin-top: 18%;
+            transform: translate(-50%,-50%) scale(1);
+            transition: all 1s ease;
+        }
+        #home{
+            width: 100%;
+            margin-top: 3%;
+        }
+        #bolang{
+            width: 100%;
+        }
+        #second{
+            text-align: center;
+        }
+        .Introducion{
+            margin-top: 60%;
+            font-size: 50px;
+        }
+        .code{
+            position: fixed;
+            height: 1px;
+        }
+        #geek:hover{
+            width: 560px;
+            transform: translate(-50%,-50%) scale(1.2);
+        }
+        .text-1 h1{
+            margin-left: 5%;
+            font-style:normal;
+            font-size: 50px;
+        }
+        .text-1 h2{
+            margin-left: 5%;
+            font-style:normal;
+            font-size: 40px;
+        }
+        .text-1 p{
+            font-size: larger;
+            margin-left: 5%;
+            font-size: 23px;
+        }
+        .img-a{
+            width: 350px;
+            height: auto;
+            align-self: center;
+            transform: translate(-0%,-0%) rotate(0);
+            transition: all 0.8s ease;
+        }
+        .img-b{
+            width: 350px;
+            height: auto;
+            align-self: center;
+            transform: translate(-0%,-0%) rotate(0);
+            transition: all 0.8s ease;
+        }
+        .img-b:hover{
+            transform: translate(-0%,-0%) rotate(20deg);
+        }
+        .img-a:hover{
+            transform: translate(-0%,-0%) rotate(-20deg);
+        }
+        .container-1{
+            padding: 30px;
+            max-width: 1200px;
+            max-height: 800px;
+            border: 1px solid #e0e0e0;
+            box-shadow: inset 0 0 0 1px;
+            border-radius: 30px;
+            display: flex;
+            gap: 30px;
+            transform: translate(-0%,-0%) scale(1);
+            transition: all 0.5s ease;
+        }
+        .container-1:hover{
+            transform: translate(-0%,-0%) scale(1.03);
+        }
+        .container-2{
+            height: 900px;
+            text-align: center;
+            background-color: #fffef4;
+        }
+        .container-2 div img{
+            width: 100px;
+        }
+        .decoration-1{
+            width: 300px;
+            position: absolute;
+            margin-left: 75%;
+            margin-top: -56%;
+        }
+        .decoration-2{
+            width: 300px;
+            position: absolute;
+            margin-left: 75%;
+            margin-top: -6%;
+            transform: scaleY(-1);
+        }
+        .decoration-3{
+            width: 300px;
+            position: absolute;
+            margin-left: 5.5%;
+            margin-top: -56%;
+            transform: scaleX(-1);
+        }
+        .decoration-4{
+            width: 300px;
+            position: absolute;
+            margin-left: 5.5%;
+            margin-top: -6%;
+            transform: rotate(180deg);
+        }
+        .about-1{
+            position:absolute;
+            margin-left: 15%;
+             width: 160px;
+            height: 360px;
+            padding: 15px;
+            transition: all 0.5s ease;
+        }
+        .about-2{
+            position:absolute;
+            margin-left: 35%;
+             width: 160px;
+            height: 400px;
+            padding: 15px;
+            transition: all 0.5s ease;
+        }
+        .about-3{
+            position:absolute;
+            margin-left: 55%;
+             width: 160px;
+            height: 360px;
+            padding: 15px;
+            transition: all 0.5s ease;
+        }
+        .about-1:hover{
+            transform: translate(0,0) scale(1.2);
+        }
+        .about-2:hover{
+            transform: translate(0,0) scale(1.2);
+        }
+        .about-3:hover{
+            transform: translate(0,0) scale(1.2);
+        }
+        .Butterfly{
+            transition: all 0.5s ease;
+        }
+        .Butterfly:hover{
+            transform: translateY(20px) ;
+        }
+        .about-us button{
+            background-color: #008d3d;
+            color: #fff;
+            width: 130px;
+            height: 35px;
+            border-radius: 16px;
+            border: #008d3d;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            font-size: 16px;
+            transition: all 0.5s ease;
+        }
+        .about-us button:hover{
+            transform: translate(0,0) scale(1.05);
+        }
+        #Q-A .toggle-trigger{
+            font-size: 30px;
+            margin-left: 25%;
+            transition: all 0.8s ease;
+        }
+        #Q-A .toggle-trigger:hover{
+            transform: translate(0,0) scale(1.1);
+            color: #0000002b;
+        }
+        #Q-A div{
+            width: 700px;
+            font-size: 30px;
+            margin-left: 25%;
+            color: #fff;
+            background-color: #6bb0ff;
+            border-radius: 12px;
+            padding: 10px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav" id="top">
+        <ul>
+            <li class="nav-a"><a href="#Introducion">Introduction</a>
+                <div>
+                    <img src="qrcode_1699620268564.jpg" alt="新思路招新二维码" class="code">
+                </div>
+            </li>
+            <li class="nav-a"><a href="#About-Us">About Us</a></li>
+            <li class="nav-b"><a href="https://campus.new-thread.com/" target="_blank">NewThread</a></li>
+            <li class="nav-a"><a href="#Contact-Us">Contact Us</a></li>
+            <li class="nav-a"><a href="#Q-A">Q&A</a></li>
+        </ul>
+    </nav>
+<div id="second">
+    <img src="decoration_Geek.png" id="geek">
+    <img src="background_Homepage.png" id="home">
+    <img src="decoration_Transition.png" id="bolang">
+    <span style="text-align: center; color: blue;" class="Introducion" id="Introducion">Introducion</span>
+</div>
+<div style="border:4.5px solid #8a8a8a ; width: 80%; margin: 0 auto; border-radius: 30px;" class="container-1">
+    <div class="text-1">
+        <h1>开发程序猿</h1>
+    <h2><span style="color: #4285f4;">"Stay Hungry，Stay Foolish"</span></h2>
+    <p>前端：前端开发是创建Web或app视觉界面呈现给用户的过程通过HTML，CSS及JavaScript以及衍生出来的各种技术、框架、解决方案，实现互联网产品的用户界面交互。</p>
+    <p>后端：通常也称服务器端开发。不对用户显示,负责处理前端的请求，进行逻辑处理和数据交互。 客户端: 移动应用开发是为了小型、无线计算设备编写软件的流程和程序的集合，例如智能手机或平板电脑。</p>
+    </div>
+    <div>
+        <img src="Geek_Programmer.png" class="img-a">
+    </div>
+</div><br>
+<div style="border:4.5px solid #8a8a8a ; width: 80%; margin: 0 auto; border-radius: 30px;" class="container-1">
+    
+    <div>
+        <img src="Geek_PM.png" class="img-b">
+    </div>
+    <div class="text-1">
+        <h1>产品经理</h1>
+    <h2><span style="color: #ee80ff;">"好的软件的特征是,明明没用过，但总觉得用过似的。"</span></h2>
+    <p>PM是针对某一项或是某一类的产品进行规划和管理的人员。 PM需要拥有缜密的产品逻辑思维，研究用户心理，负责产品的整个生命周期。 PM参与产品的UI和交互设计，为设计和开发确定产品原型，能够将产品变得有个性,操作变得舒适简单、自由。 PM需要一定的文档能力和沟通能力，能够在团队合作的过程中跟各个角色进行有效沟通。</p>
+    </div>
+</div><br>
+<div style="border:4.5px solid #8a8a8a ; width: 80%; margin: 0 auto; border-radius: 30px;" class="container-1">
+    <div class="text-1">
+        <h1>游戏开发</h1>
+    <h2><span style="color: #11e7ff;">"TECH OTAKUS SAVE THE WORLD"</span></h2>
+    <p>对游戏开发的热爱和追求，使我们相聚于此。 涉及计算机图形学的学习，我们使用物理模拟引擎Unity开发我们所追求的世界，一个故事，一个角色，在我们的世界里改变现实，创造新的可能，我们参与，我们改变，我们创造...</p>
+    </div>
+    <div>
+        <img src="Geek_Game.png" class="img-a">
+    </div>
+</div><br>
+<div style="border:4.5px solid #8a8a8a ; width: 80%; margin: 0 auto; border-radius: 30px;" class="container-1">
+    
+    <div>
+        <img src="Geek_security.png" class="img-b">
+    </div>
+    <div class="text-1">
+        <h1>安全</h1>
+    <h2><span style="color: #4285f4;">"路漫漫其修远兮，非大毅力者不能"</span></h2>
+    <p>我们主要学习Web安全和二进制安全。在Web安全中我们将学习和实践Web漏洞挖掘技术，也将探索和讨论Web安全实践的方法。在二进制安全中我们专注于分析和防御与计算机程序、系统相关的威胁，同时实践漏洞分析和修补。耐心和钻研缺一不可。</p>
+    </div>
+</div><br><br><br><br><br>
+<div style="border:6px solid #8a8a8a ; width: 80%; margin: 0 auto; border-radius: 30px;" class="container-2">
+    <p style="color: #666; font-size: 60px;" id="About-Us">About Us</p>
+    <div style="border: #820096 6px solid; border-radius: 30px;" class="about-1">
+        <img src="about_Speech.png" alt="" style="position:relative; margin-top: 10px;">
+        <p style="display: block; position: relative; margin-top: 40px; font-size: 18px;">每周我们会举行一次技术例会，用来汇报我们的学习内容，供成员之间交流学习。</p>
+    </div>
+    <div style="border: #820096 6px solid; border-radius: 30px;" class="about-2">
+        <img src="about_Diversity.png" alt="" style="position:relative; margin-top: 10px;">
+        <p style="display: block; position: relative; margin-top: 40px; font-size: 18px;">多元化是我们的特色。在这里，你可以拥有多种方向选择，前后端、安全、AI、产品/设计、游戏等。</p>
+    </div>
+    <div style="border: #820096 6px solid; border-radius: 30px;" class="about-3">
+        <img src="about_Time.png" alt="" style="position:relative; margin-top: 10px;">
+        <p style="display: block; position: relative; margin-top: 40px; font-size: 18px;">耐心、毅力是我们必备的品质，每周我们会至少花30小时在实验室中。以保证技术的精进。</p>
+    </div>
+</div>
+<div class="">
+    <img src="decoration_Decoration.png" alt="" class="decoration-1">
+    <img src="decoration_Decoration.png" alt="" class="decoration-2">
+    <img src="decoration_Decoration.png" alt="" class="decoration-3">
+    <img src="decoration_Decoration.png" alt="" class="decoration-4">
+    <img src="decoration_Butterfly.png" alt="" style="width: 200px; position: absolute;margin-top: -21%; margin-left: 75%;" class="Butterfly" title="保持好奇心！">
+</div><br><br><br><br><br>
+<div style="border:#087986 6px solid; border-radius: 25px; width: 80%; margin: 0 auto; height: 700px;">
+    <p style="text-align: center; font-size: 60px; color: #1b4938;" id="Contact-Us">Contact Us</p>
+    <div style="margin-left: 25%;">
+        <p style="font-size: 28px;">•热爱计算机，具有geek精神，喜欢DIY，动手能力较强</p>
+        <p style="font-size: 28px;">•有编程/算法/硬件基础为佳(有作品可附上)</p>
+        <p style="font-size: 28px;">•有足够的空余时间，热爱思考，对事物有自己的见解</p>
+        <p style="width: 700px;font-size: 20px; color: #808080;">ps:非新思路统招只有通过发送邮件自我介绍后，收到邮件回执后才会被允许进群,在读学生, 都可邮件到newthread_geek@outlook.com报名加入.(信中需备注个人基本信息以及意向方向,此招新活动为长期招新)</p>
+    </div>
+    <div>
+        <img src="decoration_Leaves.png" alt="树叶" style="width: 70px; position: absolute; margin-left: 22%; margin-top: -26.7%;">
+        <img src="decoration_TreeWithSometing.png" alt="" style="width: 280px; position: absolute; margin-top: -35%;">
+        <img src="decoration_Tree.png" alt="" style="width: 200px; position: absolute;margin-left: 69%; margin-top: -33%;">
+        <img src="decoration_Chameleon.png" alt="变色龙" style="width: 550px; position: absolute; margin-top: -4%; margin-left: 38.5%;">
+        <img src="decoration_Ladybug.png" alt="七星瓢虫" style="width: 100px; position: absolute; margin-top: -101.5%; margin-left: -1%;">
+    </div>
+    <div class="about-us">
+        <button  style="position: absolute; margin-left: 23%; margin-top: 4%;">QQ-Group</button>
+        <button  onclick="copyContent('newthread_geek@outlook.com')" style="position: absolute; margin-left: 35%; margin-top: 4%;">E-mail</button>
+        <button  onclick="window.location.href='https://github.com/'" style="position: absolute; margin-left: 47%; margin-top: 4%;">Github</button>
+    </div>
+</div><br><br><br><br>
+<div style="border:#309cca 6px solid; border-radius: 25px; width: 80%; margin: 0 auto; overflow: hidden;" id="Q-A">
+    <p style=" font-size: 70px; margin-left: 30%; transform: translate(0,0) scale(1);">More Questions</p>
+    <img src="background_QA.png" alt="" style="width: 80%;position: absolute; z-index: -1; margin-top: -10%; margin-left: -0.38%; height: 2500px;">
+    <p class="toggle-trigger" onclick="toggleContent(this)">1.什么是Geek(极客)？Geek精神又是什么？</p>
+    <div class="toggle-content">
+        拥有好奇之心，改变之力，爱钻研，能折腾。
+    </div>
+    <p class="toggle-trigger" onclick="toggleContent(this)">2.招新是安排在什么时间？</p>
+    <div>
+        按照惯例，正式招新时间是在9月下旬~10月上旬，不过今年会有一些改动，笔试地 点一般在9号教学楼。 如果想要了解我们，可以加入我们的QQ群，招新具体的安排/变动会在招新群通知。
+    </div>
+    <p class="toggle-trigger" onclick="toggleContent(this)">3.我们有考核吗？考核流程是怎样的呀？</p>
+    <div>
+        嗯...我们一共有一轮笔试和两轮面试。权衡技术、经验和学习能力，第一轮是一些视野性的题目，淘汰率并不高。第二轮单独面试， 根据你的笔试提出技术相关的问题、兴趣爱好、个人看法。最后一轮群面，首先问及时间分 配上的问题，其次也会向你提出各种奇怪的问题。这一轮中许多题目其实并不难，也无标准答案，重在考察同学们在压力下的逻辑思维。全部通过成为预备成员啦。
+    </div>
+    <p class="toggle-trigger" onclick="toggleContent(this)">4.考核是怎样的形式？</p>
+    <div>
+        在考核期间每人会拥有一位'长者'带你入门，学习技术与知识，交流经验与想法。完成每周的新人任务后再进行一次考核筛选 后就可以成为Geek组正式成员啦！在考核期必须满足每周30个小时在实验室哦,所以考核期也不可以懈怠哦！
+    </div>
+    <p class="toggle-trigger" onclick="toggleContent(this)">5.进入Geek组之后都有什么福利呢？</p>
+    <div>
+        一对一的新人指引，每一个成员都有会一个mentor, 带你初入门槛，与你一同成长，组内管理较宽松,在尊重其他人的前提下可以尽情发挥自己的个性。 打破平淡，与同样疯狂的人把疯狂的idea实现，磨砺耐性、培养思维、成就梦想。Lab设备/网络资源充足，闲暇之余也有组织活动。更有许多的故事等你来听~
+    </div>
+    <p class="toggle-trigger" onclick="toggleContent(this)">6.进入团队会影响我的日常学习吗？</p>
+    <div>
+        你要知道大学是一个可以自由安排自己学习生活的地方。如果你想在上课之余充实自己、激励自己，最好的方法就是和比自己更优秀的人在一起。团队不缺优秀的 人，而我们也期待同样优秀的你，让我们一起前进！小组里也有不少保研, 考研的前辈们, 大部分都能找到一个平衡点, 而且团队的经历对你日后读研, 工作都大有裨益。
+    </div>
+    <p class="toggle-trigger" onclick="toggleContent(this)">7.老师以及学长学姐们的期望是什么?</p>
+    <div>
+        我们希望你有很强的自学能力，同时关注新事物、新技术，喜欢挑战，逻辑性强，善于和各种文化的人合作.“每个人都可以做自己想做的事情，每个人的方向不一样。 如果你想做产品或有不错的 idea，那么就可以找志同道合的人一起合作。”
+    </div>
+</div>
+<div>
+    <nav style="width: 50px; background-color:#8a8a8a;">
+        <li  style="width: 50px; background-color:#8a8a8a;">
+            <a href="#top" style="color: #666;">Top</a>
+        </li>
+    </nav>
+        
+</div>
+<script>
+    function copyContent(text){
+        navigator.clipboard.writeText(text)
+        .then(() =>{
+            alert('Geek的邮箱已经复制到剪切板了！')
+        })
+    }
+    function toggleContent(trigger){
+        const content=trigger.nextElementSibling;
+        if(content.style.display==="block"){
+            content.style.display="none"
+        }else{
+            content.style.display="block"
+        }
+    }
+</script>
+</body>
+</html>
